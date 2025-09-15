@@ -1,16 +1,23 @@
 name: Cypress Tests Filtering - Tags, Chrome
 
 on:
-  workflow_dispatch: # Ruční spouštění
+  workflow_dispatch: # Ruční spouštění přes GitHub UI
 
 jobs:
   cypress-tests:
     runs-on: ubuntu-latest
+
+    env:
+      grepTags: "@smoke" # Proměnná pro Cypress grep plugin
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Cypress run
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Cypress tests
         uses: cypress-io/github-action@v6
-        with: # Nastavení filtrování testů s tagem: @smoke
-          env: grepTags=@smoke
+        with:
           browser: chrome
