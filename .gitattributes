@@ -1,2 +1,2 @@
 *.js text eol=lf
-*.json text eol=lf
+*.cy.js text eol=lf
