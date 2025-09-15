@@ -1,0 +1,24 @@
+{
+  "name": "cypress_academy_actions25",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LenkaErtl/cypress_academy_actions25.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LenkaErtl/cypress_academy_actions25/issues"
+  },
+  "homepage": "https://github.com/LenkaErtl/cypress_academy_actions25#readme",
+  "description": "",
+  "dependencies": {
+    "@cypress/grep": "^4.1.1",
+    "cypress": "^15.2.0"
+  }
+}
