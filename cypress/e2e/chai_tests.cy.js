@@ -1,8 +1,6 @@
-import LoginePage from "../pages/LoginPage";
-
 describe("Chai Tests (Tests assertions)", () => {
   beforeEach(() => {
-    new LoginePage().openPmtool();
+    cy.visit("https://tredgate.com/pmtool");
   });
 
   it("Has Text Assert", { tags: "@smoke" }, () => {
