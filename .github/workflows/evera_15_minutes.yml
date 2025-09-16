@@ -2,7 +2,7 @@ name: Cypress - Every 15 minutes (CRON)
 
 on:
   schedule:
-    - cron: "*/15 01-03 * * *" # Každých 15 minut mezi 19:00 a 21:59
+    - cron: "*/15 17-21 * * *" # Každých 15 minut mezi 19:00 a 21:59
 
 jobs:
   cypress-tests:
